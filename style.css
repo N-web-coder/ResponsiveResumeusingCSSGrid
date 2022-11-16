@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: rgb(195, 195, 195);
+    display: block;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    background: rgb(164, 162, 162);
+    grid-column: span 1;
+}
+.right-section{
+    grid-column: span 1/span 2;
+    background-color: rgb(208, 107, 107);
+}
+.left-content{
+    padding: 1rem;
+}
+img{
+    display: block; 
+    justify-content: center;
+    margin: auto;
+    /* height: 150px; */
+    width: 60%;
+    border-radius: 30%;
+    border: 5px solid white;
+}
+.name{
+    font-size: 1.2 rem;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    word-spacing: 0.02px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.soial-media{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    border: none;
+    display: inline;
+    margin: 5px 20px;
+    padding: 0.4rem;
+}
+li{
+    margin: 10px 0px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 674px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        min-height: 1000px;
+    }
+}
